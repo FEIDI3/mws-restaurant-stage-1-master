@@ -1,0 +1,56 @@
+.container{
+    width: 1200px;
+    margin: auto
+}
+@media (max-width:767px) { /* X-samll screen Rules */
+    .container {
+        width:100%;
+        margin: auto
+    }
+    p,h1,h2,h3,h4,h5,h6{
+        text-align: center
+    }
+    #restaurants-list li{
+        width: calc(100% - 30px);
+        float: none
+    }
+    .inside #map-container{
+        position: static;
+        height: 500px;
+        width: 100%;
+        margin-top: 132px;
+    }
+    #restaurant-container,
+    #reviews-container,
+    #breadcrumb{
+        width: 100%
+    }
+}
+@media (min-width:768px) and (max-width:991px){  /* Small screen Rules */
+    .container {
+        width: 750px;
+    }
+    #restaurants-list li{
+        width: calc(50% - 30px)
+    }
+    .inside #map-container{
+        position: static;
+        height: 500px;
+        width: 100%;
+        margin-top: 132px;
+    }
+    #restaurant-container,
+    #reviews-container,
+    #breadcrumb{
+        width: 100%
+    }
+}
+@media (min-width:992px) and  (max-width:1199px){ /* Medium Screen Rules */
+   .container {
+        width: 970px;
+    }
+    
+}
+@media (min-width:1200px){ /* Large Screen Rules */
+    
+}
